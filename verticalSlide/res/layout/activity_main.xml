@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#1fa9a6"
+        android:gravity="center"
+        android:text="商品详情"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#aaaaaa" />
+
+    <com.stone.verticalslide.DragLayout
+        android:id="@+id/draglayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:id="@+id/first"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <FrameLayout
+            android:id="@+id/second"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </com.stone.verticalslide.DragLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#aaa" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="￥28.00"
+            android:textColor="#f00" />
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:background="#ff0000"
+            android:gravity="center"
+            android:text="加入购物车"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#454545"
+            android:drawableLeft="@drawable/qq"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="客服"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
