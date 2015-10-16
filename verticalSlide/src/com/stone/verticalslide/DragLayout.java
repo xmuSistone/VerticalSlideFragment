@@ -214,12 +214,19 @@ public class DragLayout extends ViewGroup {
 	protected void onLayout(boolean changed, int l, int t, int r, int b) {
 		// 只在初始化的时候调用
 		// 一些参数作为全局变量保存起来
+		
 		if (frameView1.getTop() == 0) {
+			// 只在初始化的时候调用
+			// 一些参数作为全局变量保存起来
 			frameView1.layout(l, 0, r, b - t);
 			frameView2.layout(l, 0, r, b - t);
 
 			viewHeight = frameView1.getMeasuredHeight();
 			frameView2.offsetTopAndBottom(viewHeight);
+		} else {
+			// 如果已被初始化，这次onLayout只需要将之前的状态存入即可
+			frameView1.layout(l, frameView1.getTop(), r, frameView1.getBottom());
+			frameView2.layout(l, frameView2.getTop(), r, frameView2.getBottom());
 		}
 	}
 
