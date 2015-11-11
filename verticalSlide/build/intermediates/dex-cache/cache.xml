@@ -2,32 +2,46 @@
 <items version="2" >
 
     <item
-        jar="/Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jar="/Users/oceancx/Development/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="/Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-6c2dfa865952a7352cb0bcecee5ddad843c1a005.jar" />
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="/Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.0-eafe3da64424b18d2a314ce19384f96ae67d89d0.jar" />
     </item>
     <item
-        jar="/Users/oceancx/Development/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jar="/Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="/Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1-cdd53bf626110193565813c1da597e0e6e76e6b0.jar" />
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="/Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/pre-dexed/debug/classes-a149c68b7bac7a44e96cc069d92988e5498d64f7.jar" />
     </item>
     <item
-        jar="/Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/libs/nineoldandroids-2.4.0.jar"
+        jar="/Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="a43cf9e271b5bc564e880a0a4be63ab9c69c97f8">
-        <dex dex="/Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/pre-dexed/debug/nineoldandroids-2.4.0-3738d56da9d00377278d624320aa574ad0e7f623.jar" />
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="/Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.0-9eb37c877a3977dbb9b4382e1ff9e535dca80c8e.jar" />
     </item>
     <item
-        jar="/Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jar="/Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="/Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/pre-dexed/debug/classes-4c187288106b9968aa97bf0ff25e9c8c65f31aa5.jar" />
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="/Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/pre-dexed/debug/classes-49c14641a7321a7478e59f343bf7797a0e0a137e.jar" />
+    </item>
+    <item
+        jar="/Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="/Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/pre-dexed/debug/classes-efbd7906ee87d05583eacd4a1500251468df95b6.jar" />
+    </item>
+    <item
+        jar="/Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/verticalSlide/library/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d340aaa6e26297737a834748fb9ce05c6d9e8367">
+        <dex dex="/Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/pre-dexed/debug/classes-6b1c47cd1bb9287fa38d40b8a5afef6c52f6b1d7.jar" />
     </item>
 
 </items>

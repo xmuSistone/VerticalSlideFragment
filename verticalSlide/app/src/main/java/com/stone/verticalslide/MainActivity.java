@@ -1,44 +1,32 @@
 package com.stone.verticalslide;
-
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
-import android.view.Window;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
-import com.stone.verticalslide.DragLayout.ShowNextPageNotifier;
+import com.stone.verticalslide.library.DragLayout;
 
-public class MainActivity extends FragmentActivity {
 
-	private VerticalFragment1 fragment1;
-	private VerticalFragment3 fragment3;
-	private DragLayout draglayout;
+public class MainActivity extends AppCompatActivity {
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.activity_main);
-		initView();
-	}
+    DragLayout mDragLayout;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        getSupportFragmentManager().beginTransaction().add(R.id.frame1, new Fragment1())
+                .add(R.id.frame2, new Fragment2()).commit();
+        mDragLayout = (DragLayout) findViewById(R.id.drag_layout);
+        mDragLayout.setOnPageSwitchListener(new DragLayout.OnPageSwitchListener() {
+            @Override
+            public void onSwitchPageToOne() {
+                Toast.makeText(MainActivity.this, "onSwitchPageToOne", Toast.LENGTH_SHORT).show();
+            }
 
-	/**
-	 * 初始化View
-	 */
-	private void initView() {
-		fragment1 = new VerticalFragment1();
-		fragment3 = new VerticalFragment3();
-
-		getSupportFragmentManager().beginTransaction()
-				.add(R.id.first, fragment1).add(R.id.second, fragment3)
-				.commit();
-
-		ShowNextPageNotifier nextIntf = new ShowNextPageNotifier() {
-			@Override
-			public void onDragNext() {
-				fragment3.initView();
-			}
-		};
-		draglayout = (DragLayout) findViewById(R.id.draglayout);
-		draglayout.setNextPageListener(nextIntf);
-	}
+            @Override
+            public void onSwitchPageToTwo() {
+                Toast.makeText(MainActivity.this, "onSwitchPageToTwo", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
 
 }

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:2:1-30:12
+ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:2:1-27:12
 	xmlns:android
 		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:2:11-69
 	package
@@ -13,48 +13,60 @@ ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlid
 		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:4:5-28
 		INJECTED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:8:5-67
+	android:name
+		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:8:22-64
+application
+ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:10:5-25:19
+MERGED from [com.android.support:support-v4:23.1.0] /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.0] /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.1.0] /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.0] /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.1.0] /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.0] /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.0] /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:14:9-41
+	android:allowBackup
+		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:11:9-35
+	android:icon
+		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:13:9-45
+	android:theme
+		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:15:9-40
+	android:hardwareAccelerated
+		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:12:9-43
+activity#com.stone.verticalslide.MainActivity
+ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:16:9-24:20
+	android:label
+		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:18:13-45
+	android:name
+		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:17:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:19:13-23:29
+action#android.intent.action.MAIN
+ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:22:27-74
 uses-sdk
-ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:7:5-8:37
-MERGED from [com.android.support:support-v4:23.0.1] /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+INJECTED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:support-v4:23.1.0] /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.1.0] /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.0] /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.1.0] /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.0] /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:20:5-43
+MERGED from [verticalSlide:library:unspecified] /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/verticalSlide/library/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.1.0] /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.0] /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.1.0] /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.0] /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		INJECTED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:8:9-34
 		INJECTED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml
-uses-permission#android.permission.INTERNET
-ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:10:5-67
-	android:name
-		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:10:22-64
-application
-ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:12:5-28:19
-MERGED from [com.android.support:support-v4:23.0.1] /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
-	android:label
-		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:16:9-41
-	android:allowBackup
-		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:13:9-35
-	android:icon
-		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:15:9-45
-	android:theme
-		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:18:9-40
-	android:hardwareAccelerated
-		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:14:9-43
-	android:largeHeap
-		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:17:9-33
-activity#com.stone.verticalslide.MainActivity
-ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:19:9-27:20
-	android:label
-		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:21:13-45
-	android:name
-		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:20:13-41
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:22:13-26:29
-action#android.intent.action.MAIN
-ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:23:17-69
-	android:name
-		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:23:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:25:17-77
-	android:name
-		ADDED from /Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/AndroidManifest.xml:25:27-74

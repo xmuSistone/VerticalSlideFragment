@@ -6,8 +6,8 @@ android {
 
     defaultConfig {
         applicationId "com.stone.verticalslide"
-        minSdkVersion 8
-        targetSdkVersion 8
+        minSdkVersion 14
+        targetSdkVersion 23
     }
 
     buildTypes {
@@ -20,5 +20,7 @@ android {
 
 dependencies {
     compile 'com.android.support:support-v4:23.0.1'
-    compile files('libs/nineoldandroids-2.4.0.jar')
+    compile 'com.android.support:recyclerview-v7:23.1.0'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile project(':library')
 }
