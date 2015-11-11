@@ -4,6 +4,7 @@
 
 主要修改是更改ViewDragHelp与onInterceptTouchEvent之间的事件拦截逻辑.
 具体可看源码.
+![tupian](1.gif)
 
 # android-vertical-slide-view
 vertical slide to switch to the next fragment page.
