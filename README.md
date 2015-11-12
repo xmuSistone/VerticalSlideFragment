@@ -1,3 +1,15 @@
+# 在 xmuSistone/android-vertical-slide-view 仁兄库下修改
+
+主要是使两个FrameLayout里面可以放RecyclerView,在第一个FrameLayout中,如果RecyclerView滑动到了底部,再滑动放可拉出第二个界面.类似的,在第二个界面只有滑到顶部时,才会拉出第一个界面.
+
+主要修改是更改ViewDragHelp与onInterceptTouchEvent之间的事件拦截逻辑.还有就是将工程转换成了android studio.具体可看源码.
+
+![tupian](1.gif)
+
+
+[APK](https://raw.githubusercontent.com/oceancx/android-vertical-slide-view/master/support_recyclerview.apk)
+
+
 # android-vertical-slide-view
 vertical slide to switch to the next fragment page.
 

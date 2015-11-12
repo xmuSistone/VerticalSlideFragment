@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stone.verticalslide.library.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drag_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/frame2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</com.stone.verticalslide.library.DragLayout>
+<!-- From: file:/Users/oceancx/android-vertical-slide-view/verticalSlide/app/src/main/res/layout/activity_main.xml -->
