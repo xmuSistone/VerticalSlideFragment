@@ -7,7 +7,7 @@
 ![tupian](1.gif)
 
 
-[APK](support_recyclerview.apk)
+[APK](https://raw.githubusercontent.com/oceancx/android-vertical-slide-view/master/support_recyclerview.apk)
 
 
 # android-vertical-slide-view
