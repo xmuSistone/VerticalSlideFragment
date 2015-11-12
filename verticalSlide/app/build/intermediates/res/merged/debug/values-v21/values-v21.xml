@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/res/values-v21/styles.xml -->
+    <!-- From: file:/Users/oceancx/android-vertical-slide-view/verticalSlide/app/src/main/res/values-v21/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!--
@@ -10,7 +10,7 @@
         -->
         <item name="android:colorPrimary">#f1f20f</item>
     </style>
-    <!-- From: file:/Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml -->
+    <!-- From: file:/Users/oceancx/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-v21/values-v21.xml -->
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance.Material"/>
     <style name="Base.TextAppearance.AppCompat.Body1" parent="android:TextAppearance.Material.Body1"/>

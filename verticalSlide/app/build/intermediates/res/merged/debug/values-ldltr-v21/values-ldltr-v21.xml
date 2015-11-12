@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-ldltr-v21/values-ldltr-v21.xml -->
+    <!-- From: file:/Users/oceancx/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-ldltr-v21/values-ldltr-v21.xml -->
     <eat-comment/>
     <style name="Base.Widget.AppCompat.Spinner.Underlined" parent="android:Widget.Material.Spinner.Underlined"/>
 </resources>

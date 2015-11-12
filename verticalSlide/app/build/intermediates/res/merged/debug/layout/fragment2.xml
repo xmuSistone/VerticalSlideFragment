@@ -7,4 +7,4 @@
 
     android:clipToPadding="false"
     android:clipChildren="false"
-    xmlns:android="http://schemas.android.com/apk/res/android" /><!-- From: file:/Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/src/main/res/layout/fragment2.xml -->
+    xmlns:android="http://schemas.android.com/apk/res/android" /><!-- From: file:/Users/oceancx/android-vertical-slide-view/verticalSlide/app/src/main/res/layout/fragment2.xml -->

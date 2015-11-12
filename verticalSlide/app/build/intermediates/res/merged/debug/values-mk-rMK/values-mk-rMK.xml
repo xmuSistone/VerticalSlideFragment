@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/oceancx/resume_github/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-mk-rMK/values-mk-rMK.xml -->
+    <!-- From: file:/Users/oceancx/android-vertical-slide-view/verticalSlide/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/res/values-mk-rMK/values-mk-rMK.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Движи се кон дома"</string>
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
