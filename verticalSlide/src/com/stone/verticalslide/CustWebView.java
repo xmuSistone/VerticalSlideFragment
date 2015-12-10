@@ -24,7 +24,10 @@ public class CustWebView extends WebView {
 
 	@Override
 	public boolean dispatchTouchEvent(MotionEvent ev) {
-		if (ev.getAction() == MotionEvent.ACTION_DOWN) {
+		if (ev.getPointerCount() > 1) {
+			needConsumeTouch = true;
+		}
+		else if (ev.getAction() == MotionEvent.ACTION_DOWN) {
 			downY = ev.getRawY();
 			needConsumeTouch = true; // 默认情况下，listView内部的滚动优先，默认情况下由该listView去消费touch事件
 			allowDragTop = isAtTop();
