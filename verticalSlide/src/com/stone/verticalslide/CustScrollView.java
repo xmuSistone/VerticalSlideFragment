@@ -9,7 +9,6 @@ public class CustScrollView extends ScrollView {
 	boolean allowDragBottom = true; // 如果是true，则允许拖动至底部的下一页
 	float downY = 0;
 	boolean needConsumeTouch = true; // 是否需要承包touch事件，needConsumeTouch一旦被定性，则不会更改
-	int maxScroll = -1; // 最大滑动距离
 
 	public CustScrollView(Context arg0) {
 		this(arg0, null);
@@ -29,8 +28,7 @@ public class CustScrollView extends ScrollView {
 			downY = ev.getRawY();
 			needConsumeTouch = true; // 默认情况下，scrollView内部的滚动优先，默认情况下由该ScrollView去消费touch事件
 
-			if (maxScroll > 0
-					&& getScrollY() + getMeasuredHeight() >= maxScroll - 2) {
+			if (getScrollY() + getMeasuredHeight() >= computeVerticalScrollRange() - 2) {
 				// 允许向上拖动底部的下一页
 				allowDragBottom = true;
 			} else {
@@ -59,12 +57,4 @@ public class CustScrollView extends ScrollView {
 		return super.dispatchTouchEvent(ev);
 	}
 
-	@Override
-	protected void onScrollChanged(int l, int t, int oldl, int oldt) {
-		if (maxScroll < 0) {
-			maxScroll = computeVerticalScrollRange();
-		}
-
-		super.onScrollChanged(l, t, oldl, oldt);
-	}
 }
