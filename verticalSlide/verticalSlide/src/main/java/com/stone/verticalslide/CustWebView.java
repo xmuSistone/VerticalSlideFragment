@@ -74,17 +74,16 @@ public class CustWebView extends WebView {
                 float yDistance = Math.abs(downY - ev.getRawY());
                 if (xDistance > yDistance && xDistance > mTouchSlop) {
                     scrollMode = MODE_HORIZONTAL;
-                } else if (downY > xDistance && yDistance > mTouchSlop) {
+                } else if (yDistance > xDistance && yDistance > mTouchSlop) {
+                    scrollMode = MODE_VERTICAL;
                     if (downY < ev.getRawY() && isAtTop) {
-                        scrollMode = MODE_VERTICAL;
                         getParent().requestDisallowInterceptTouchEvent(false);
-                        return true;
                     }
                 }
             }
         }
 
-        return super.onInterceptTouchEvent(ev);
+        return super.dispatchTouchEvent(ev);
     }
 
     /**
