@@ -191,7 +191,11 @@ public class DragLayout extends ViewGroup {
 		}
 
 		boolean yScroll = gestureDetector.onTouchEvent(ev);
-		boolean shouldIntercept = mDragHelper.shouldInterceptTouchEvent(ev);
+		boolean shouldIntercept = false;
+		try {
+			shouldIntercept = mDragHelper.shouldInterceptTouchEvent(ev);
+		}
+		catch (Exception e) {}
 		int action = ev.getActionMasked();
 
 		if (action == MotionEvent.ACTION_DOWN) {
