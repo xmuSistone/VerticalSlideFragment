@@ -7,18 +7,17 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import android.widget.ListView;
 
-/**
- * 为底部ListView使用
- */
+
 public class CustListView extends ListView {
     private static final int MODE_IDLE = 0;
     private static final int MODE_HORIZONTAL = 1;
     private static final int MODE_VERTICAL = 2;
 
-    boolean isAtTop = true; // 如果是true，则允许拖动至底部的下一页
-    private int mTouchSlop = 4; // 判定为滑动的阈值，单位是像素
     private int scrollMode;
     private float downX, downY;
+
+    boolean isAtTop = true; // 如果是true，则允许拖动至底部的下一页
+    private int mTouchSlop = 4; // 判定为滑动的阈值，单位是像素
 
     public CustListView(Context arg0) {
         this(arg0, null);
@@ -30,7 +29,7 @@ public class CustListView extends ListView {
 
     public CustListView(Context arg0, AttributeSet arg1, int arg2) {
         super(arg0, arg1, arg2);
-        // 滑动的距离阈值由系统提供
+
         ViewConfiguration configuration = ViewConfiguration.get(getContext());
         mTouchSlop = configuration.getScaledTouchSlop();
     }
@@ -49,17 +48,17 @@ public class CustListView extends ListView {
                 float yDistance = Math.abs(downY - ev.getRawY());
                 if (xDistance > yDistance && xDistance > mTouchSlop) {
                     scrollMode = MODE_HORIZONTAL;
-                } else if (downY > xDistance && yDistance > mTouchSlop) {
+                } else if (yDistance > xDistance && yDistance > mTouchSlop) {
+                    scrollMode = MODE_VERTICAL;
                     if (downY < ev.getRawY() && isAtTop) {
-                        scrollMode = MODE_VERTICAL;
                         getParent().requestDisallowInterceptTouchEvent(false);
-                        return true;
+                        return false;
                     }
                 }
             }
         }
 
-        return super.onInterceptTouchEvent(ev);
+        return super.dispatchTouchEvent(ev);
     }
 
     /**
