@@ -35,7 +35,7 @@ public class CustListView extends ListView {
     }
 
     @Override
-    public boolean dispatchTouchEvent(MotionEvent ev) {
+    public boolean onInterceptTouchEvent(MotionEvent ev) {
         if (ev.getAction() == MotionEvent.ACTION_DOWN) {
             downX = ev.getRawX();
             downY = ev.getRawY();
@@ -52,13 +52,12 @@ public class CustListView extends ListView {
                     scrollMode = MODE_VERTICAL;
                     if (downY < ev.getRawY() && isAtTop) {
                         getParent().requestDisallowInterceptTouchEvent(false);
-                        return false;
+                        return true;
                     }
                 }
             }
         }
-
-        return super.dispatchTouchEvent(ev);
+        return super.onInterceptTouchEvent(ev);
     }
 
     /**

@@ -61,7 +61,7 @@ public class CustWebView extends WebView {
     }
 
     @Override
-    public boolean dispatchTouchEvent(MotionEvent ev) {
+    public boolean onInterceptTouchEvent(MotionEvent ev) {
         if (ev.getAction() == MotionEvent.ACTION_DOWN) {
             downX = ev.getRawX();
             downY = ev.getRawY();
@@ -82,8 +82,34 @@ public class CustWebView extends WebView {
                 }
             }
         }
+        return super.onInterceptTouchEvent(ev);
+    }
 
-        return super.dispatchTouchEvent(ev);
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
+            downX = event.getRawX();
+            downY = event.getRawY();
+            isAtTop = isAtTop();
+            scrollMode = MODE_IDLE;
+            getParent().requestDisallowInterceptTouchEvent(true);
+        } else if (event.getAction() == MotionEvent.ACTION_MOVE) {
+            if (scrollMode == MODE_IDLE) {
+                float xDistance = Math.abs(downX - event.getRawX());
+                float yDistance = Math.abs(downY - event.getRawY());
+                if (xDistance > yDistance && xDistance > mTouchSlop) {
+                    scrollMode = MODE_HORIZONTAL;
+                } else if (yDistance > xDistance && yDistance > mTouchSlop) {
+                    scrollMode = MODE_VERTICAL;
+                    if (downY < event.getRawY() && isAtTop) {
+                        getParent().requestDisallowInterceptTouchEvent(false);
+                    }
+                }
+            }
+        }
+
+        return super.onTouchEvent(event);
     }
 
     /**

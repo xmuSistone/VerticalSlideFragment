@@ -35,7 +35,15 @@ public class CustScrollView extends ScrollView {
     }
 
     @Override
-    public boolean dispatchTouchEvent(MotionEvent ev) {
+    protected void onFinishInflate() {
+        super.onFinishInflate();
+
+        //子View一定要Clickable才行，否则onInterceptTouchEvent工作不按正常来
+        getChildAt(0).setClickable(true);
+    }
+
+    @Override
+    public boolean onInterceptTouchEvent(MotionEvent ev) {
         if (ev.getAction() == MotionEvent.ACTION_DOWN) {
             downY = ev.getRawY();
             isAtBottom = isAtBottom();
@@ -56,7 +64,7 @@ public class CustScrollView extends ScrollView {
                 }
             }
         }
-        return super.dispatchTouchEvent(ev);
+        return super.onInterceptTouchEvent(ev);
     }
 
     @Override
